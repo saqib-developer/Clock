@@ -1,0 +1,23 @@
+:root {
+    --background-color: linear-gradient(to bottom right, rgb(43, 101, 226), rgb(26, 159, 208));
+}
+
+body {
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 8vw;
+    background: var(--background-color);
+}
+
+span {
+    margin: 26px 3px;
+}
+
+.time-box{
+    background: rgb(55 163 229)
+}

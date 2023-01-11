@@ -1,6 +1,13 @@
-let a = new Date();
-let d = a.getDate();
-let h = a.getHours();
-let m = a.getMinutes();
-let s = a.getSeconds();
-console.log(d, h, m, s)
+setInterval(function () {
+    let time = new Date();
+    let year = time.getFullYear();
+    let month = time.getMonth();
+    let date = time.getDate();
+    let hour = time.getHours();
+    let min = time.getMinutes();
+    let sec = time.getSeconds();
+    document.getElementById('date').innerHTML = date + " / " + (month + 1) + " / " + year;
+    document.getElementById('hour').innerHTML = hour;
+    document.getElementById('min').innerHTML = min;
+    document.getElementById('sec').innerHTML = sec;
+}, 500);
