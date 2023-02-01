@@ -11,7 +11,7 @@
 //     document.getElementById('min').innerHTML = min;
 //     document.getElementById('sec').innerHTML = sec;
 // }, 500);
-/* 
+
 let secAngle = 0;
 setInterval(() => {
     let sec = document.getElementById('sec');
@@ -32,4 +32,4 @@ setInterval(() => {
     sec.style.transform = "rotate(" + hourAngle + "deg)";
     hourAngle += 0.001;
 }, 1 * 1000);
-*/
+

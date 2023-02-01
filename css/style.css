@@ -35,42 +35,41 @@ main {
     justify-content: center;
 }
 
-.img-container {
+.img-container img {
     position: absolute;
     z-index: -1;
-}
-
-.img-container img {
     border-radius: 50%;
     width: 300px;
     background: #45b8e4;
 }
 
 .hand {
-    position: absolute;
     transform-origin: bottom center;
-    transform: rotate(0deg);
-    background-color: black;
-    top: 57px;
+    position: absolute;
 }
 
 .hour-hand {
-    transform: rotate(90deg);
-    width: 8px;
-    height: 117px;
+    background-color: black;
+    /* transform: rotate(90deg); */
+    width: 7px;
+    height: 153px;
+    margin-top: -153px;
 }
 
 .min-hand {
-    transform: rotate(180deg);
-    width: 5px;
-    height: 117px;
+    background-color: black;
+    /* transform: rotate(180deg); */
+    width: 3px;
+    height: 166px;
+    margin-top: -166px;
 }
 
 .sec-hand {
-    transform: rotate(270deg);
-    width: 2px;
-    height: 117px;
     background-color: rgb(249, 15, 15);
+    /* transform: rotate(270deg); */
+    width: 1.5px;
+    height: 166px;
+    margin-top: -166px;
 }
 
 footer {
