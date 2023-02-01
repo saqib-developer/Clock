@@ -22,6 +22,57 @@ body {
     color: #45bfc5;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.analogue-clock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-container {
+    position: absolute;
+    z-index: -1;
+}
+
+.img-container img {
+    border-radius: 50%;
+    width: 300px;
+    background: #45b8e4;
+}
+
+.hand {
+    position: absolute;
+    transform-origin: bottom center;
+    transform: rotate(0deg);
+    background-color: black;
+    top: 57px;
+}
+
+.hour-hand {
+    transform: rotate(90deg);
+    width: 8px;
+    height: 117px;
+}
+
+.min-hand {
+    transform: rotate(180deg);
+    width: 5px;
+    height: 117px;
+}
+
+.sec-hand {
+    transform: rotate(270deg);
+    width: 2px;
+    height: 117px;
+    background-color: rgb(249, 15, 15);
+}
+
 footer {
     min-height: 11vh;
     position: absolute;
