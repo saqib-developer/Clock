@@ -13,23 +13,19 @@
 // }, 500);
 
 let secAngle = 0;
+let minAngle = 0;
+let hourAngle = 0;
 setInterval(() => {
     let sec = document.getElementById('sec');
     sec.style.transform = "rotate(" + secAngle + "deg)";
     secAngle += 6;
-}, 1 * 1000);
 
-let minAngle = 0;
-setInterval(() => {
-    let sec = document.getElementById('min');
-    sec.style.transform = "rotate(" + minAngle + "deg)";
+    let min = document.getElementById('min');
+    min.style.transform = "rotate(" + minAngle + "deg)";
     minAngle += 0.1;
-}, 1 * 1000);
 
-let hourAngle = 0;
-setInterval(() => {
-    let sec = document.getElementById('hour');
-    sec.style.transform = "rotate(" + hourAngle + "deg)";
+    let hour = document.getElementById('hour');
+    hour.style.transform = "rotate(" + hourAngle + "deg)";
     hourAngle += 0.001;
 }, 1 * 1000);
 
