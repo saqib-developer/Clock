@@ -14,13 +14,13 @@ setInterval(function () {
     sec.style.transform = "rotate(" + 6 * sec_no + "deg)";
 
     let min = document.getElementById('min');
-    min.style.transform = "rotate(" + 0.1 * (min_no * 60) + "deg)";
+    min.style.transform = "rotate(" + 6 * min_no + "deg)";
 
     // if (hour_no > 12) {
     //     hour_no -= 12;
     // }
 
     let hour = document.getElementById('hour');
-    hour.style.transform = "rotate(" + 0.001 * (hour_no * 60 * 60) + "deg)";
+    hour.style.transform = "rotate(" + 6 * hour_no + "deg)";
 
 }, 500);
