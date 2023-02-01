@@ -1,31 +1,26 @@
-// setInterval(function () {
-//     let time = new Date();
-//     let year = time.getFullYear();
-//     let month = time.getMonth();
-//     let date = time.getDate();
-//     let hour = time.getHours();
-//     let min = time.getMinutes();
-//     let sec = time.getSeconds();
-//     document.getElementById('date').innerHTML = date + " / " + (month + 1) + " / " + year;
-//     document.getElementById('hour').innerHTML = hour;
-//     document.getElementById('min').innerHTML = min;
-//     document.getElementById('sec').innerHTML = sec;
-// }, 500);
-
-let secAngle = 0;
-let minAngle = 0;
-let hourAngle = 0;
-setInterval(() => {
+setInterval(function () {
+    let time = new Date();
+    //     let year = time.getFullYear();
+    //     let month = time.getMonth();
+    //     let date = time.getDate();
+    let sec_no = time.getSeconds();
+    let min_no = time.getMinutes();
+    let hour_no = time.getHours();
+    //     document.getElementById('date').innerHTML = date + " / " + (month + 1) + " / " + year;
+    //     document.getElementById('hour').innerHTML = hour;
+    //     document.getElementById('min').innerHTML = min;
+    //     document.getElementById('sec').innerHTML = sec;
     let sec = document.getElementById('sec');
-    sec.style.transform = "rotate(" + secAngle + "deg)";
-    secAngle += 6;
+    sec.style.transform = "rotate(" + 6 * sec_no + "deg)";
 
     let min = document.getElementById('min');
-    min.style.transform = "rotate(" + minAngle + "deg)";
-    minAngle += 0.1;
+    min.style.transform = "rotate(" + 0.1 * (min_no * 60) + "deg)";
+
+    // if (hour_no > 12) {
+    //     hour_no -= 12;
+    // }
 
     let hour = document.getElementById('hour');
-    hour.style.transform = "rotate(" + hourAngle + "deg)";
-    hourAngle += 0.001;
-}, 1 * 1000);
+    hour.style.transform = "rotate(" + 0.001 * (hour_no * 60 * 60) + "deg)";
 
+}, 500);

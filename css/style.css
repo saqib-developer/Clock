@@ -52,8 +52,8 @@ main {
     background-color: black;
     /* transform: rotate(90deg); */
     width: 7px;
-    height: 153px;
-    margin-top: -153px;
+    height: 150px;
+    margin-top: -150px;
 }
 
 .min-hand {
