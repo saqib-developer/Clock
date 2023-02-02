@@ -16,11 +16,11 @@ setInterval(function () {
     let min = document.getElementById('min');
     min.style.transform = "rotate(" + 6 * min_no + "deg)";
 
-    // if (hour_no > 12) {
-    //     hour_no -= 12;
-    // }
+    if (hour_no > 12) {
+        hour_no -= 12;
+    }
 
     let hour = document.getElementById('hour');
-    hour.style.transform = "rotate(" + 6 * hour_no + "deg)";
+    hour.style.transform = "rotate(" + 30 * hour_no + "deg)";
 
 }, 500);
