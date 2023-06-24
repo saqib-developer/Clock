@@ -1,5 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+NKo&display=swap');
 
+@media (max-width: 470px) {
+    .analogue-clock img {
+        width: 295px !important;
+    }
+
+    .hour-hand {
+        height: 104px !important;
+        margin-top: -106px !important;
+        width: 5px !important;
+    }
+
+    .min-hand {
+        height: 119px !important;
+        margin-top: -118px !important;
+        width: 4px !important;
+    }
+
+    .sec-hand {
+        height: 119px !important;
+        margin-top: -118px !important;
+        width: 2px !important;
+
+    }
+}
+
 :root {
     --background-color: linear-gradient(to bottom right, rgb(43, 101, 226), rgb(26, 159, 208));
 }
@@ -46,6 +71,7 @@ main {
 .hand {
     transform-origin: bottom center;
     position: absolute;
+    border-radius: 15px;
 }
 
 .hour-hand {
